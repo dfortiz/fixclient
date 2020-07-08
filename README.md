@@ -34,6 +34,11 @@ An example run can be done with the following command:
 
 ```sh
 python main.py -config <config_file_name> -broker <counterparty_alias>
+
+python main.py -config configs/fix/twoSess_tier1.cfg -p # con plot
+python main.py -config configs/fix/twoSess_tier1.cfg #sin plot
+
+
 ```
 
 The configuration file *config_file_name* should contain two sessions: one for trade and another one for quotes. If it has only one then the client will probably still work but if an action from a different session is requested then it might crash. I will eventually fix it so that it works again with single session files.

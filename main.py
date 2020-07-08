@@ -20,8 +20,8 @@ def get_default_args():
 
 def main(args):
     print("FRANK")
- #   app = fixapp.SessionAuto(args)
-#    app.start()
+    app = fixapp.SessionAuto(args)
+    app.start()
 
 if __name__ == '__main__':
      #check arguments from commmand line and set everything up

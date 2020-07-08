@@ -43,10 +43,14 @@ class SessionAuto(object):
             _, options = parse_fix_options("3 -55 {}".format(self.symbol))
             self.app.subscribe_to_data(**options)
             print("{:<27} {:<10} {:<10}".format('Datetime','Bid','Ask'))
+            print("15 secods ... ")
             time.sleep(15)
+
             if self.args.plot:
                 self.plotter.plot()
+
             while 1:
+                print("while true ")
                 if isTime(self.datastream):
                     action = self.trader.action()
                     printv("action to take: {}".format(self.actions_dict[action]))
