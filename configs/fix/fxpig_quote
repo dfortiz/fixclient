@@ -1,0 +1,41 @@
+#First and foremost thank you for your continued interest in FXPIG.
+
+#Enclosed please find the MT4 login credentials for your newly created SPA demo trading account:
+
+#Account Number: 105837
+#Password: t4JteC0N
+#Investor Password: fRCPhMds
+#Server Address: demo.fxpig.com:443
+#iOS App: https://itunes.apple.com/us/app/metatrader-4/id496212596?mt=8
+#Android App: https://play.google.com/store/apps/details?id=net.metaquotes.metatrader4&hl=en
+#Platform Download: https://download.mql5.com/cdn/web/prime.intermarket.group/mt4/fxpig4setup.exe
+#FIX credentials:
+
+[DEFAULT]
+BeginString=FIX.4.4
+ConnectionType=initiator
+HeartBtInt=30
+ReconnectInterval=30
+StartTime=00:00:00
+EndTime=23:59:59
+UseLocalTime=N
+StartDay=Sun
+EndDay=Sat
+DataDictionary=./FIX44.xml
+UseDataDictionary=Y
+FileStorePath=./Sessions/
+FileLogPath=./Logs/
+
+[SESSION]
+SessionQualifier=QUOTES
+SenderCompID=105837
+#SenderCompID=106022
+TargetCompID=QUOTES
+Username=105837
+Password=t4JteC0N
+ResetOnLogon=Y
+CheckLatency=N
+SocketConnectHost=208.68.172.83
+SocketConnectPort=7549
+#SocketConnectHost=demo.fxpig.com
+#SocketConnectPort=443
